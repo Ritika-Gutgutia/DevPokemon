@@ -1,0 +1,41 @@
+.pokemon__search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pokemon__search__input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #d8a95e;
+  width: 400px;
+}
+
+.pokemon__message {
+  grid-column: span 3;
+  text-align: center;
+  font-size: 16px;
+}
+
+.pokemon__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+  row-gap: 30px;
+  text-align: center;
+  margin: 3.2rem 0;
+}
+
+@media (max-width: 1200px) {
+  .pokemon__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .pokemon__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
